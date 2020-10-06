@@ -69,7 +69,8 @@ prototípus készítése
 ### RAD modell
 - nagy projekt esetén nagy a humán erőforrás ígény => nagy projekteken me használható a RAD
 ### Boehm spiráll modell
-![spirálmodell vázlat](https://hu.wikipedia.org/wiki/Spir%C3%A1lmodell#/media/Fájl:Spiralmodell.jpeg)
+![spiralmodell vázlat](https://hu.wikipedia.org/wiki/Spir%C3%A1lmodell#/media/Fájl:Spiralmodell.jpeg)
+
 bővebben: https://hu.wikipedia.org/wiki/Spir%C3%A1lmodell
 nagy projektekre van optimalizálva
 1. Célok kijelölése
@@ -80,3 +81,6 @@ nagy projektekre van optimalizálva
 - tetszőleges számú iteráció
 - tartalmazza a kockázat-kezelést is
 - integrálhat más modelleket is
+
+## EA3
+### Környezeti modell
