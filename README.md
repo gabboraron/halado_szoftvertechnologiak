@@ -85,3 +85,37 @@ nagy projektekre van optimalizálva
 ## EA3
 ### Környezeti modellek
 - elemzés korai szakaszában fontosak
+- meghatározzák mi tartozik a rendszerhez, amit  kezelni kell és ami nem tartozik hozzá
+- célja, hogy egy általános képet mutasson a rendszerről
+
+### Üzleti foyamatok modellezése
+- megrendelp aktív bevonása a részletekbe
+- BPMI - Business Process Managemant Initiative => OMG(*az UML fejlesztői*)-vel közösen Business Process Modell and Notation
+![BPM poszter](https://i.pinimg.com/originals/0a/dd/1f/0add1f3c2c8f978f42a1f3fe92743745.png) 
+fájl: [bpmn_nyomt.pdf](https://github.com/gabboraron/halado_szoftvertechnologiak/blob/main/bpmn_nyomt.pdf), online: http://users.nik.uni-obuda.hu/szollosi/virmod/docs/bpmn_nyomt.pdf
+
+taxi rendelés: https://www.conceptdraw.com/examples/taxi-booking-process
+![taxi bpmn](https://conceptdraw.com/a324c3/p1/preview/640/pict--business-process-modeling-cab-booking-public-process-collaboration-bpmn-2.0-diagram)
+
+### P-gráf
+bővebben: http://acta.uni-obuda.hu//Tick_9.pdf
+- irányított páros gráf => csúcsai két diszjunkt halmazba sorolhatóak, és azonos csúcstípusok között nem vezet él
+  - (M,O),P gráf
+- process gráf
+- gráf csúcsai:
+  - műveletvégző egységek (`O`)
+  - anyagok (`M`):
+    - nyersanyag: folyamat bemeneti elemei
+    - termék-anyag: folyamat eredményei
+    - köztes anyag: feldolgozási fázisok alatt keletkezik, használódik fel
+    - melléktermék anyag: folyamat célja szempontjából nem kívánatosnak számít
+  - termékek (`P`)
+- egy `O` típusú csúcsból <=>vezethet él egy `M` típusú csúcsba, ha `M` z `O` kimeneti halmazának eleme, vagyis *`O`előállít `M` anyagot*
+  - `M` típusú csúcsból <=> vezethet él `O` műveleti egység típusú csúcsba, ha `M` az `O` bemeneti halmazának eleme, vagyis *`O` feldolgozza `M`-et*
+  
+  ![p rgáf példa](https://github.com/gabboraron/halado_szoftvertechnologiak/blob/main/Screenshot_2020-10-07%20Microsoft%20Word%20-%20Tick_9%20doc%20-%20Tick_9%20pdf.png)
+**Matematikailag:** 
+Adott: 
+- `M` véges halmaza (`P` és `R` részhalmaza `M`-nek)
+- `O` műveleti egységek halmaza
+ekkor `M` és `O` diszjunkt
