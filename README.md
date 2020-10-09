@@ -119,3 +119,43 @@ Adott:
 - `M` véges halmaza (`P` és `R` részhalmaza `M`-nek)
 - `O` műveleti egységek halmaza
 ekkor `M` és `O` diszjunkt
+
+### Petri hálók
+bővebben: https://hu.wikipedia.org/wiki/Petri-h%C3%A1l%C3%B3 és https://docplayer.hu/12406731-Petri-halok-alapfogalmak-kiterjesztesek.html valamint https://inf.mit.bme.hu/sites/default/files/materials/category/kateg%C3%B3ria/oktat%C3%A1s/msc-t%C3%A1rgyak/form%C3%A1lis-m%C3%B3dszerek/11/PN_alapfogalmak_kiterjesztesek.pdf esetleg http://david.bedok.hu/file/20120428_BedokDavid_Petri_halok_szimja_es_alkuk_oo_korben_v044_OENIK.pdf
+és https://people.inf.elte.hu/fekete/algoritmusok_msc/workflow/hallgatoi_esszek/Balogh_Bernadett_Workflow.pdf
+
+Elemei:
+- helyek
+- átmenetek
+- csúcsok véges halmazai:{P,T}
+  - `P`- helyek: tárolják a tokeneket
+  - `T` - átmenetek: valamilyen akció
+  - csak az egymástól különböző típusúak köthetőek össze, pl `P`-`P` **nem**, de `P`-`T` **igen**
+- élek irányítottak, két féle él lehetséges: `P -> T`  és `T -> P`
+=> irányított páros gráf
+
+![petri háló alapjai](https://docplayer.hu/docs-images/41/12406731/images/page_6.jpg)
+
+**A petri háló álapotai:**
+> minden hely (`P`)  tartalmazhat tokeneket, *pontokat a körön belül*, ami a hely erősségét, állapotát jelzi. A háló állapotát a helyek számának összessége a tokenek számához viszonyítva, azaz a tokenek eloszlása jelzi.
+
+**Működése:**
+> - állapotváltozás sorozata
+> - az átmenetek aszinkron működnek, ha minden feltétel adott akkor azonnal létrejön, megtörténik az átmenet, azaz *tüzel*, ekkor egyértleműen a bemeneti helyek számának tokenjei az ígény mennyiségével lecsökkennek. Így ááll elő az új állapot.
+>
+> ![Petri háló folyamat közben](https://www.azimuthproject.org/azimuth/files/chemistryNetDot1A.png)
+> 
+> **Állapotvektor:** a teljes rendszert magába foglalja, és akkor `+1` a csúcs értéke, ha van benne  `1` token, egyébként, ha üres akkor `0`.
+
+**élsúlyok bevezetése:**
+> az aktivitás költségével megegyező költségszámot írhatunk az élekre, ami a `tüzelés` közben jelzi, hogy az `aktivitásnak` mennyi lesz a költsége.
+>
+> Így a petri háló képlete: `PN(P,T,E,W,M0)`
+
+**Modellezés [Snoopy](https://www-dssz.informatik.tu-cottbus.de/DSSZ/Software/Snoopy#downloads) programmal:**
+1. `File` -> ` `New` -> `Petri Net`
+2. `Elements` -> `Place` - helyeket ad hozzá kattintásra
+3. `Elements` -> `Transition` - átmenetet ad hozzá kattintásra
+4. `Elements` -> `Arc` - összeköttetést ad hozzá kattintásra a *ból* irányt adjuk meg, majd húzzuk az egeret a *cél* irány felé.
+5. `View` -> `Start anim` - animáció megadása és elindítása. `Options` menüben érdems a `Steppoing`-et maximumra állítani.
+fájl:[jelzőlámpa modellezés Snoopy programban](https://github.com/gabboraron/halado_szoftvertechnologiak/blob/main/jelzolampa_modell_petri_haloval.pn)
