@@ -120,6 +120,7 @@ Adott:
 - `O` műveleti egységek halmaza
 ekkor `M` és `O` diszjunkt
 
+## EA 5
 ### Petri hálók
 bővebben: https://hu.wikipedia.org/wiki/Petri-h%C3%A1l%C3%B3 és https://docplayer.hu/12406731-Petri-halok-alapfogalmak-kiterjesztesek.html valamint https://inf.mit.bme.hu/sites/default/files/materials/category/kateg%C3%B3ria/oktat%C3%A1s/msc-t%C3%A1rgyak/form%C3%A1lis-m%C3%B3dszerek/11/PN_alapfogalmak_kiterjesztesek.pdf esetleg http://david.bedok.hu/file/20120428_BedokDavid_Petri_halok_szimja_es_alkuk_oo_korben_v044_OENIK.pdf
 és https://people.inf.elte.hu/fekete/algoritmusok_msc/workflow/hallgatoi_esszek/Balogh_Bernadett_Workflow.pdf
@@ -159,3 +160,49 @@ Elemei:
 4. `Elements` -> `Arc` - összeköttetést ad hozzá kattintásra a *ból* irányt adjuk meg, majd húzzuk az egeret a *cél* irány felé.
 5. `View` -> `Start anim` - animáció megadása és elindítása. `Options` menüben érdems a `Steppoing`-et maximumra állítani.
 fájl:[jelzőlámpa modellezés Snoopy programban](https://github.com/gabboraron/halado_szoftvertechnologiak/blob/main/jelzolampa_modell_petri_haloval.pn)
+
+### Szerkezeti és működési modellek
+**Szerkezeti modellek:**
+
+> Somerville könyv, 2. kiadás 14. fejezet
+> 
+> Rendszereket vagy azok részeinek szerkezetét írja le. 
+
+**Működési modellek:**
+ 
+ pl: https://www.1000sourcecodes.com/2012/05/software-engineering-transform-mapping.html
+ 
+> A rendszer működését/viselkedését írja le. gymásba ágyazható modellek.
+> 
+> Jellemzői:
+> - DFD (*Data Flow Diagram*) az adatok, adatfolyam áramlását írja le. Meghatározza, hogy a külvilágból a rendszernek mivel kell kapcsolatot tartania.
+> - az összes lehetséges infomrációáramlást tartalmazza
+> - **nem tartalmazza az információ áramlásának sorrendiségét!**
+> - finomításnál a *buborékokat* felvágjuk és 5-7 elmere bontjuk
+
+Részei:
+- Külső egyed: információ forrás
+- folyamat: teljesen általános folyamat, bármi lehet
+- adat elem vagy azok gyűjtő fogalma: infomráció áramlásan iránya
+- adat tároló: itt sincs mgekötés, bármi lehet, *olyan fomrában adja vissza az adatot ahogy eltároltuk*, 0-ás szinten ilyne nincs, csak 1-es szinten
+
+![DFD model example](https://www.freeprojectz.com/sites/default/files/Student%20Management%20System%20DFD%20First%20Level.jpeg)
+
+**Kétféle leírással kiegészíthetjük**:
+- **DD**: data dictionary, adatszótár, egy pontosítása annak, hogy mit értün az adaton, részletekig bemenőleg
+- **PSPEC**: process specification, (a folyamat szöveges megfogalmazása lehet, vagy strukturált angollal is megfogalmazhatjuk) algoritmusokat, megszorításokat, és részleteket tartalmaz, a már nem tovább bontható elemi folyamatok leírása, hogy milyen algoritmus, vagy megszorítás alapján működik.
+
+példa, központi elemmmel, egyszerű betörés riasztó rendszer:
+
+![két bemenet és három kimenetű példa ddfd](https://3.bp.blogspot.com/-xtmgyAVqXGM/T7z5wCSdR_I/AAAAAAAAARk/IlMnNNQIlvI/s1600/Capture.PNG)
+
+ugyanez tovább bontva a központi elme mentén, egyes szintűvé:
+
+![egyes szintű felbontása a buboréknak](https://3.bp.blogspot.com/-lJmyUAA_8vA/T7z6TltyEQI/AAAAAAAAAR0/on5iBGRAwU0/s1600/Capture.PNG)
+
+ugyanígy tovább bontva:
+
+![2-es szintű dfdvé talakítva](https://4.bp.blogspot.com/-sdK_UPPpRSM/T7z61Q-brqI/AAAAAAAAAR8/HQFfeAxrCOI/s1600/Capture.PNG)
+
+> *A folyamat eredményei nem csak az ábrák, hanem a folyamat végén a probléma teljes megértése és feltárása!*
+
