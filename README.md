@@ -206,3 +206,19 @@ ugyanígy tovább bontva:
 
 > *A folyamat eredményei nem csak az ábrák, hanem a folyamat végén a probléma teljes megértése és feltárása!*
 
+## EA 6
+- http://hackingarena.com/home/index.html
+- http://hackingarena.com/arena-exploits/
+
+### input adat ellenőrzés
+> - felhasználói hiba
+> - gonosz felhasználók
+> - nem `debug` hanem `release` módban kell kiadni a szoftvert
+> - `site: bme.hu intitle:"index of" password`
+> - web biztonság gyakorló oldal: http://hackingarena.com/challenges/web/
+> - kliens oldali validáció gyakorló: http://palpatine.hackingarena.no:804/
+> - SQL injection puska: http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
+>   - `sqlmap -b "jabba.hackingarena..." --technique=B -D`
+> - https://portswigger.net/
+> - https://coinsrs.no/wp-content/uploads/2016/04/finse-20160427-erdodi-ethical-hacking.pdf
+> - https://www.immunityinc.com/products/debugger/
