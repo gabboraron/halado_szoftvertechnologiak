@@ -222,3 +222,65 @@ ugyanígy tovább bontva:
 > - https://portswigger.net/
 > - https://coinsrs.no/wp-content/uploads/2016/04/finse-20160427-erdodi-ethical-hacking.pdf
 > - https://www.immunityinc.com/products/debugger/
+
+## EA 7 - CASE eszközök
+- a teljes szoftverfejlesztési folyamatot támogatja
+- egy teljs módszertant lekövet
+- fontos az újrahasználhatóság
+![CASE eszközök](https://www.includehelp.com/basics/Images/case-tools.jpg)
+
+### UPPER CASE tool
+támogatja az analízis és tervezés fázisait, segíti reportok és formok generálását
+
+### LOWER CASE tool
+kódgenerálást és kódolást támogat
+
+> - standard metodológián alapuló: UML, OMTSA/SD
+> - felxibilitás: a különböző eszközök különböző projekteken is használhatóak, nem projektspecifikusak
+> - integritás: a különböző eszközök egymással kompatibilisek maradnak
+> - integráció tesztelő redszer: automatikus tesztelést végző rendszerek használata  fejlesztés során
+> - reverse engenering: magasabb szintű nyelvek támogatása
+
+
+**Alap szolgáltatások:**
+> - message services: szabványos kacsolódás tool-tool; tool-enviroment, enviroment-enviroment
+> - User interface services: UI fejlesztéshez
+> - data repository services: adatok és adatkapcsolatok tárolása, kezelése
+> - data integration services: csoportok és azok közti kapcsolatokat kezel
+> - task mnagement services: folyamat modellek pontos meghatározása és integrálása
+
+### Tesztelés
+Egy összehasonlítás, hogy a rendszer tudja-e a specifikációkat
+1. a tesztelés csak a hibák jlenlétét jelzi
+2. nem lehtésges kimerítő teszt
+3. korai teszt 
+4. hibák csoportosulása
+5. féregírtó paradoxon
+6. a tesztelés függ a körülményektől
+7. hibátlan rendszer téveszméje
+
+#### Tesztelés folyamata
+1. terv készítés: - mit milyen céllal és milyen módszerrel tesztelünk, lásd [V modell](https://github.com/gabboraron/halado_szoftvertechnologiak#v-modell)
+   - teszt célja
+   - teszt tárgya: objektum/osztály
+   - tesztbázis - követelmények
+   - tesztadat
+   - kilépési feltétel
+2. teszteset tervezés: - milyen tesztadattal kell vizsgálni a rendszert, milxen eredményt várunk
+3. előkészületek: 
+   - követlemény alapú tesztelés: megcsinálja-e azt amit szeretnénk látni?
+     - szükséges: nagyon pontos követelményrendszer -> validáció
+   - pertició tesztelés: adat tesztelés, input-output adatokra
+     - pl: pozitív sázmok, intervallumok megadása, stb
+   - strukturális tessztelés: a program szerkezetét/vezérlését teszteli
+     - nyelvi elemek tesztelése, - White box teszt
+     - útvonaltesztelés: a szekvenciák működése, a programot leíró gráf működése
+4. tesztelés
+5. kilépési feltételek vizsgáláata
+6. eredmények áttekintése
+7. jelentéskészítés
+
+- Automata tesztelő rendszerek gyakorlatailag ugyanezt végzik el.
+- Tesztgenerátor: sok adatot generál a megadott intervallumban.
+- Véletlen tesztadat generálás, fuzzy generálás is hasznos lehet.
+
