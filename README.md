@@ -333,10 +333,10 @@ Egy összehasonlítás, hogy a rendszer tudja-e a specifikációkat
 > 8. modern it rendszerek
 > 9. növekvő követelmény a temrékkel szemben
 >
-> **1. ártatlanság kora**: elfogadja a rossz minőséget is
-> **2. eszmélés időszaka**: minőség fontosságát felismerik, de szükséges rosszként kezelik
-> **3. elkötelezettség kora**: amikor a minőség gazdasági szükségszerűség, a gyártási folyamatok erre optimalizálva.
-> **4. világszínvonal elérése**: minőség mindenek felett, a hibás termék megelőzése a cél
+> 1. **ártatlanság kora**: elfogadja a rossz minőséget is
+> 2. **eszmélés időszaka**: minőség fontosságát felismerik, de szükséges rosszként kezelik
+> 3. **elkötelezettség kora**: amikor a minőség gazdasági szükségszerűség, a gyártási folyamatok erre optimalizálva.
+> 4. **világszínvonal elérése**: minőség mindenek felett, a hibás termék megelőzése a cél
 >
 > **szoftverminőség kezelése**:
 > - minőségbiztosítás
@@ -345,5 +345,54 @@ Egy összehasonlítás, hogy a rendszer tudja-e a specifikációkat
 >   - kiválasztjuk, hogy az összes előírásból mi az ami nekünk fontos
 > - minsőségtervezés
 >   - garantálja, hogy használják az alkalmazottak az előírásokat
+> 
+> A szoftvernek az új környezetekbe is adaptálhatóak kell lennie, pl üzelti modellekhez, stb.
 
+### McCall féle minőség modell
+> Geenral Electricnl fejlesztették, a DoD és az Air Force minőségmodellei alapján. Három szinten osztályozzák a minőséget, metrikákkal, amik pl hibák száma/jól működő funkciók sázma/stb
+>
+> - **Felhasználói alapszempontok**
+>     - működés jellemzői
+>     - felülvizsgálat: mennyire alkalmas a változtatásra
+>     - termék-átvitel: alkalmazkodás új környezethez
+> - **minőségi faktorok**: hordozhatóság, megbízhatósg, hatékonyság, felhasználási kényelem, tesztelhetőség, módosíthatóság
+> - **szoftverminőség jellemzők**: eszközfüggetlenség, tlejeség, pontosság, konzisztencia, öndokumentáltság, stb
+> 
+> ![McCall minőségi faktorok](https://theintactone.files.wordpress.com/2019/01/1.1quality-factor.jpg)
 
+### Boehm-féle minőségmodell
+> - felső hierarchiaszinten a felhasnálási folyamat alapvető eseményei által meghatározott szempontok
+> - minőség minősítési szempont, funkciók módosíthatósága/karbantarthatóság
+> - már hadver/szoftverkörnyezetbe való portolhatóság
+> 
+> ![boehm diagram](https://www.researchgate.net/profile/Mihai_Doinea/publication/228728142/figure/fig2/AS:302008989962245@1449015962379/Boehm-Quality-Characteristics-Model.png)
+
+### ISO 9126 szabvány
+> 1. rész: minőségi modell 9126-1
+> 2. rész Külső metrikák 9126-2
+> 3. rész belső metrikák 9126-3
+> 4. rész használat közbeni metrikák 9126-4
+> - termék `=>` termék interfész `=>` termék környezet & felhasználók
+>
+> ![iso diagram](https://www.win.tue.nl/~wstomv/edu/2ip30/references/9126ref1.gif)
+>
+>
+> 1. **Funkcionalitás**:
+>    - a specifikációnk eleget tesz a szoftver.
+>    - alkalmasság, pontosság, hitelesség, együttműködési képesség, megfelelőség, rendszer biztonság, adat biztonság, betörés elleni védelem
+> 2. **Megbízhatóság**:
+>    - a szoftver azon képessége, hogy meghatározott körülmények közötti használata során fenntart egy adott szintű teljesítményt
+>    - érettség, hibatűrés, visszaállíthatóság
+> 3. **Használhatóság**:
+>    - használata során érthető, tanulható, használható és *"vonzó"* a felhasználó számára
+>    - érthetőség, tanulhatóság, működési képesség 
+> 4. **Hatékonyság**: 
+>    - jó hatásfokkal használja ki az erőforrásokat, optimalizált, adatbázis kezelés sebessége
+> 5. **Karbantarthatóság**: 
+>    - azon képessége a szoftvernek, hogy mennyire módosítható, mennyire alklamzható új környezethez
+>    - tesztelhetőség, mobilitás
+> 6. **Hordozhatóság**: 
+>    - áthelyezhető egyik környezetből amásikba
+>    - installálhatóság, együtt létezés, helyettesíthetőség, adaptálhatóság
+>
+> ![external and internal quality](https://www.researchgate.net/profile/Allan_Morris4/publication/245439760/figure/fig2/AS:596920921772039@1519328446944/ISO-IEC-9126-1-External-and-Internal-Quality-Attributes-12.png)
