@@ -284,3 +284,66 @@ Egy összehasonlítás, hogy a rendszer tudja-e a specifikációkat
 - Tesztgenerátor: sok adatot generál a megadott intervallumban.
 - Véletlen tesztadat generálás, fuzzy generálás is hasznos lehet.
 
+## EA 8 - minőségi kérdések
+> A minőség nehezen definiálható. 
+>
+> 1. felhasználói alapú: 
+>   - felhasználásra való alkalmasság
+>   - felhasználó ígényeit kielégíti
+> 2. termék alapú definíció
+>   - a minőséget mérhető paraméterek adják meg
+>   - a különbség az egyes jellemzők közti kkülönbségekből adódnak
+>   - ez objektív szemlélet
+> 3. folyamat alapú definíció
+>   - megfelel a specifikációnak, akkor minőségi
+> 4. érték alapú
+>   - költség függvéynében határozza meg a minőséget => jó termék alacsony áron oldja meg a feladatot
+> 5. transzcendens definíció
+>   - a minőség veleszüületett, azaz pl a márkanév adja
+> - Filozófiai értelmezés: pl svéd acél, svájci bicska, stb, értékrenden, divaton alapuló megítélés
+> - Társadalmi értelmezés: társadalmi hasznnosság és veszélytelen
+> - Minőségügyi értelmezés: egyensúlya a műszaki/erkölcsi/piaci/gazdasági aspektusoknak
+> 
+> **Az ISO szerint**: azon jellemzők öszessége aamik befolyásolják képessgét, ohgy meghatározott ígényeket elégítsen ki
+> => azt adja amit és amikor elvárnak normális árért
+>
+> Minőségi ígény:
+>  - szabvány
+>  - jogszabály
+>  - kor divat: hintó/sportkocsi
+> 
+> **Garvin 8 dimenziója:**
+> 1. teljesítmény: szolgáltatások alapvető felhasználhatóságát jelenti
+> 2. sajátosságok: alapvető jelelmzők, plusz/egyedi funkciók
+> 3. megbízhatóság, hogy használati idő alatt nem romlik el (*mtb*)
+> 4. megfelelés: a követelményeket mennyire elégíti ki, tömegtermelésben a termékek egyedi elllenőrzése pl *LEGO*
+> 5. tartósság: szolgáltatás használati időn belül nyújtott teljesítmény mértéke
+> 6. használhatóság: termék kiaknázhatóságának mértéke
+> 7. eszétika: pl a *GUI*
+> 8. Felismert minőség: márkanév/termék híre/stb
+>
+> **Minőséget befolyásoló tényezők (9M):**
+> 1. piacok
+> 2. pénz
+> 3. vezetés
+> 4. emberek
+> 5. ösztönzés
+> 6. anyagok
+> 7. gépek és gépesítés
+> 8. modern it rendszerek
+> 9. növekvő követelmény a temrékkel szemben
+>
+> **1. ártatlanság kora**: elfogadja a rossz minőséget is
+> **2. eszmélés időszaka**: minőség fontosságát felismerik, de szükséges rosszként kezelik
+> **3. elkötelezettség kora**: amikor a minőség gazdasági szükségszerűség, a gyártási folyamatok erre optimalizálva.
+> **4. világszínvonal elérése**: minőség mindenek felett, a hibás termék megelőzése a cél
+>
+> **szoftverminőség kezelése**:
+> - minőségbiztosítás
+>   - szabályok felállítása
+> - minőségtervezés
+>   - kiválasztjuk, hogy az összes előírásból mi az ami nekünk fontos
+> - minsőségtervezés
+>   - garantálja, hogy használják az alkalmazottak az előírásokat
+
+
