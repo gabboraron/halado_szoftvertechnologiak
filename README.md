@@ -333,10 +333,10 @@ Egy összehasonlítás, hogy a rendszer tudja-e a specifikációkat
 > 8. modern it rendszerek
 > 9. növekvő követelmény a temrékkel szemben
 >
-> 1. **ártatlanság kora**: elfogadja a rossz minőséget is
-> 2. **eszmélés időszaka**: minőség fontosságát felismerik, de szükséges rosszként kezelik
-> 3. **elkötelezettség kora**: amikor a minőség gazdasági szükségszerűség, a gyártási folyamatok erre optimalizálva.
-> 4. **világszínvonal elérése**: minőség mindenek felett, a hibás termék megelőzése a cél
+> - 1. **ártatlanság kora**: elfogadja a rossz minőséget is
+> - 2. **eszmélés időszaka**: minőség fontosságát felismerik, de szükséges rosszként kezelik
+> - 3. **elkötelezettség kora**: amikor a minőség gazdasági szükségszerűség, a gyártási folyamatok erre optimalizálva.
+> - 4. **világszínvonal elérése**: minőség mindenek felett, a hibás termék megelőzése a cél
 >
 > **szoftverminőség kezelése**:
 > - minőségbiztosítás
