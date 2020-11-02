@@ -396,3 +396,38 @@ Egy összehasonlítás, hogy a rendszer tudja-e a specifikációkat
 >    - installálhatóság, együtt létezés, helyettesíthetőség, adaptálhatóság
 >
 > ![external and internal quality](https://www.researchgate.net/profile/Allan_Morris4/publication/245439760/figure/fig2/AS:596920921772039@1519328446944/ISO-IEC-9126-1-External-and-Internal-Quality-Attributes-12.png)
+
+## EA 9 - folyamat alapú minőség modellek
+
+![folyamat minőség](https://slideplayer.hu/slide/2130209/8/images/24/Folyamat+alap%C3%BA+min%C5%91s%C3%A9g.jpg)
+
+folyamat szabványok: 
+- terv áttekintési folyamatok
+- dokumentumok ellenőrzése
+- verziókibocsálytási folyamat
+- projektterv jóváhagyási folyamata
+- változásvezérlő folyamat
+- tesztek rögzítésének folyamata
+
+**ISO 9000-3 szabvány**
+- nem garantálja a piaci sikerességet
+- csak minőségbiztosítást jelent
+
+
+**Nyolc alapelv:**
+1. vevőközpontúság
+   - a vevőelvárásaihoz a lehető leginkább igazodik
+   - a vevő létének kérdése, pl egy egyetem esetén:
+     - hallgató a vevő
+     - ipar a vevő, hallgató a termék
+2. Támogató vezetés
+   - ha a cég vezetés nem elkötelezett a minőségmenedgemant iránt akkor lehetetlen eleget tenni
+3. munkatársak bevonása
+   - minden egyes munkatársnak el kell sajátítania a minőségmenedgmentet
+4. folyamatszemlélet
+5. rendszerszemlélet az irányításban
+   - mi a rendszer az esetünkben
+6. folyamatos fejlesztés
+7. tényeken alapuló döntéshozatal
+   - data driven projekt vezetés
+8. kölcsönösen előnyös kapcsolatok a besázllítókkal
