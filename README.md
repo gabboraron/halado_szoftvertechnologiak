@@ -401,6 +401,7 @@ Egy összehasonlítás, hogy a rendszer tudja-e a specifikációkat
 
 ![folyamat minőség](https://slideplayer.hu/slide/2130209/8/images/24/Folyamat+alap%C3%BA+min%C5%91s%C3%A9g.jpg)
 
+
 folyamat szabványok: 
 - terv áttekintési folyamatok
 - dokumentumok ellenőrzése
@@ -409,12 +410,21 @@ folyamat szabványok:
 - változásvezérlő folyamat
 - tesztek rögzítésének folyamata
 
+![iso 9000 evolution](https://canadaclever.weebly.com/uploads/1/2/4/8/124872945/137580444.jpg)
+
 **ISO 9000-3 szabvány**
 - nem garantálja a piaci sikerességet
 - csak minőségbiztosítást jelent
 
+**ISO 9000-1 szabvány**
+- specifikusan a szoftverfejlesztést támogatja
+- több szemszögből írja le a folyamatot
+- a minőségi kézikönyvben dokumentálandó dolgokat írja le
 
-**Nyolc alapelv:**
+![ISO 9000 minőségkezelés](https://slideplayer.hu/slide/2130209/8/images/11/Az+ISO+9000+%C3%A9s+a+min%C5%91s%C3%A9gkezel%C3%A9s.jpg)
+
+
+#### Nyolc alapelv:
 1. vevőközpontúság
    - a vevőelvárásaihoz a lehető leginkább igazodik
    - a vevő létének kérdése, pl egy egyetem esetén:
@@ -431,3 +441,99 @@ folyamat szabványok:
 7. tényeken alapuló döntéshozatal
    - data driven projekt vezetés
 8. kölcsönösen előnyös kapcsolatok a besázllítókkal
+
+
+#### Szükséges aktivitások
+- belső szervezet kialakítása
+- dokumentumok elkészítése
+- dolgozók felkészítése
+- külső alapító audit
+- rendszeres belső auditok
+- megújító auditok
+- folyamatos karbantartás
+
+### CMMI modell
+> egy plusz jegyzet: http://moodle.autolab.uni-pannon.hu/Mecha_tananyag/autoipari_beagyazott_rendszerek/ch07.html
+>
+> optimálsi modularizáltsák
+> - kompaktság
+> - interfész a modulok között
+> Részei:
+> - folyamatmérés: aktuális projekt mérése
+> - folyamatelemzés: gyengeségek azonaosítása
+> - folyamatváltoztatás: elemzés eredméynei alapján fejlesztés
+>
+> https://sei.cmu.edu/ szervezetek értékelésére létrehozott értékelési rendszer és modellek
+>
+> A **CMMI** egyesíti a szoftver és rendszer képesség fejlettségi modellek.
+> - átvilágítja a vállalatot a minőség meközelítéséből
+> - több mint 1000 oldal
+> - **emberek, eszközök, modellek**
+> 
+> Alapelvei:
+> 1. folyamatterületek: 24 terület, ami 4 nagyobb területre osztható
+> 2. célok: az elérni kívánt állapot absztrakt leírásai
+> 3. gyakorlatok: nem a cél, hanem az út a fontos, Tao filozófia => ez garantálja az érettségi szintet
+>
+> **Folytonos modellértelmezés:**
+> - pontosabb képet ad, fontossági sorrend állítható fel a folyamatok között
+> 6 képességszint
+> szintek egymásra épülnek:
+>
+> ![szintek](https://image.slidesharecdn.com/cmmi-1212603170101910-9/95/cmmi-14-728.jpg)
+>
+> ![szintek és a fejelsztéseik](https://image.slidesharecdn.com/cmmi-1212603170101910-9/95/cmmi-5-728.jpg)
+>
+> **Lépcsős modell**
+>
+> ![lépcsős szintek](https://slideplayer.hu/slide/12552534/75/images/7/A+CMMI+folyamatai+%C3%A9retts%C3%A9gi+szintek+szerint.jpg)
+> 
+> 5 szintre bont: 
+> - alap
+>   - nincs stabil szoftverfejlesztési és karbantartási környezet
+>   - projekt nem követi a tervezett eljárásokat
+>   - ad hoc megoldások a fejlesztésben
+>   - nincsennek kulcsterületek
+>   - folyamat képesség egy-egy embernek köszönhető
+> - menedzselt
+>   - léteznek alapvető projektmenedzsment fleadatok, átvesszük korábbi projektek jó részleteit
+>   - kulcsterületek:
+>     - konfigurációmenedzsment
+>     - minőségbiztosítás
+>     - alszerződés menedzsment
+>     - projekttervezés
+>     - projektkövetés
+>   - folyamat képesség szigorú de alapszintű menedzselésnek köszönhető
+> - definiált
+>   - menedzsment és a technikai tevékenység szabványosított
+>   - standardizálás alapjai
+>   - jól definiáltak a folyamatok
+>   - Kulcsterületek
+>     - szervezeti folyamat meghatározás
+>     - folyamatközpontúság
+>     - integrált szoftvermenedzsment
+>     - szoftvertermék menedzsment
+>   - folyamat képesség a szabványosításnak és a konzisztenciának köszönhető 
+> - kvantitatívan menedzselt
+>   - pontos mérések a termékről
+>   - minőségi sé mennyiségi célok
+>   - elfogadható határok közés szorítva
+>   - kulcsterületek
+>     - szoftverminőség menedzsment
+>     - folyamat menedzsment
+>   - folyamat képesség a mérhetőségnek és az előreláthatóságnak  köszönhető
+> - optimalizált
+>   - folytosnos továbbfejlesztésre fókuszál
+>   - hibaelemzések, ok meghatározások, visszacsatolások
+>   - gyengeségeket és erősségek beazonosítása
+>   - kulcsterületek:
+>     - hibamegelőzés
+>     - technológiaváltozás
+>     - folyamatváltozás menedzsment
+>   - folyamat képesség a folytonos továbbfejlesztésnek köszönhető
+> 
+> ![lépcsős modell](http://moodle.autolab.uni-pannon.hu/Mecha_tananyag/autoipari_beagyazott_rendszerek/images/10000201000005D900000206C9A869A0.png)
+> 
+> => kulcs folyamatterületek adják az érettségi szintet
+>
+> ![összehasonlítás](https://slideplayer.hu/slide/2101979/8/images/16/A+CMMI%C2%AE+modell+elemei+%C3%89retts%C3%A9gi+szint.+L%C3%A9pcs%C5%91s+megk%C3%B6zel%C3%ADt%C3%A9s.+1.+Kezdeti+%28initial%29+2.+Menedzselt+%28Managed%29.jpg)
