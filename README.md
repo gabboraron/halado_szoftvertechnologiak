@@ -537,3 +537,67 @@ folyamat szabványok:
 > => kulcs folyamatterületek adják az érettségi szintet
 >
 > ![összehasonlítás](https://slideplayer.hu/slide/2101979/8/images/16/A+CMMI%C2%AE+modell+elemei+%C3%89retts%C3%A9gi+szint.+L%C3%A9pcs%C5%91s+megk%C3%B6zel%C3%ADt%C3%A9s.+1.+Kezdeti+%28initial%29+2.+Menedzselt+%28Managed%29.jpg)
+
+## EA 12 - gelhasználói felületek tervezése
+> - felhasználói elégedettségre kell törekedni: felhasználóbarátnak
+> - ergonómikusnak: hosszú munkafolyamat során sem lehet fárasztó
+> - tetszetősnek kell lennie
+
+
+> **Két fontos terület:**
+> - felhasználói szoftver: input/output
+> - webes alkalmazások: színes, adatbázisokkal összekötött, ami a webdesign szakterülete
+>
+> megítélése szubjektív!
+> 
+> súlyuk nagymrtékben növekedett az idők során:
+> - eleinte adatokat beadni, kiadni
+> - '76 - spock nyomtatott képe
+> - szemigrafikus felület: egy karakter területét hat részre osztva külön megcímezve lehetett GUIt kialakítani. => '81 galaxy attack, 
+> - videókártyák fejlődése amikor külön processzorok segítiik a kirajzolást
+
+**Az elsődleges védelmi zóna**
+> az elsődleges szempont, hogy kézre essen a szoftver, de nem szabad elfelejtenünk a védelmet sem
+
+
+**Fizikai tulajdonságok**
+- ne legyenek véletlenül megnyomhatóak fontos gombkombináiók, pl ctrl alt del
+- hibajelzések színezése is fontos
+- kontrasztos színek használata hosszan használt felületek esetén nem ajánlott
+- manipuláció precizitása, pl egér érzékenység
+
+**mentális tulajdonságok**
+- az meberi agy hét dologra emlékszik kényelmesen (sztem már rég kevesebb)
+- hosszú távú memória szerepe, azaz a felhasználó mennyire ígényli a segítséget. 
+- korcsoport függő dolgok
+- kudarcélmény tolerálása a flehasználás során, azaz, mennyire lehangoló ha nem kénylmes a GUI
+
+1. Felhasználói jártasság elve: A felhasználó saját szakmájára alakuljon a menürendszer, arra legyen szabva, neki ez legyen kényelmes
+2. konzisztencia: a windows menü mindnehol ugynaúgy néz ki
+3. Minimális meglepetések: legyen konfort érzete, ne változzon állandóan
+4. visszaállíthatóság: pl undo
+5. felhasználói támogatás elve: helpdesk
+6. felhasználói sokféleség: széles felhasználói kör által használt felületek esetén működjön mindenkire alkalmazhatóan, pl egy oprendszer, vagy reklámpanel, de nem ilyen egy gyárszallag melletti vezérlő
+
+**Felhasználói felületek tervezési kérdései:**
+- interakció kialakítása
+- információ megjelelenítés: elég részletes, de ne feleslegesen sok leírás
+- interakció típusok: 
+  - közvetlen maipuláció: pl mozgatás, törlés, legyen szimbóluma annak a menüpontnak
+    - előnye: azonnal használható
+    - hátrány: profi kezelőkenk lassú
+  - menü kiválasztás:  
+    - milyen csoportok vannak amiket a felhasználó használna, milyen menüket ismer eddig
+  - ürlap kitöltés: akkor jó ha csak pár lehetőséget kell megadni, de a többi az kötött ezért a felhasználónak nem kell azokkal foglalkoznia
+    - csak azt lehet beírni amire mező van
+    - általános célú adatbevitel
+  - parancsnyelv: MS-DOS: `dir *.exe/p`
+    - nehezen tanulható, lassú a megindulás
+    - profiknak előnyös
+    - irányító rendszerek esetén hasznos
+  - Természetes nyelv:
+    - teljesen általános
+    - komplex parancsoknál használhatatlan
+    - információ visszakereső rendszerek
+- mindegyik interakció fajtának van előnye a hátránya mellett
+- ideális: ugyanaz több felől megközelíthető: GUI és parancssor is lehet
