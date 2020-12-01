@@ -537,7 +537,15 @@ folyamat szabványok:
 > => kulcs folyamatterületek adják az érettségi szintet
 >
 > ![összehasonlítás](https://slideplayer.hu/slide/2101979/8/images/16/A+CMMI%C2%AE+modell+elemei+%C3%89retts%C3%A9gi+szint.+L%C3%A9pcs%C5%91s+megk%C3%B6zel%C3%ADt%C3%A9s.+1.+Kezdeti+%28initial%29+2.+Menedzselt+%28Managed%29.jpg)
-
+## EA 12 - reverse engeneering I
+- minden  program felbontható: szekvencia szelekció iteráció -ra
+## EA 11 - reverse engeneering II
+- OMG szabvány az UML elődje
+- szolgáltaláts regiszterből válogatjuk ki milyen szolgáltalásra van szüksgünk
+- a kérelmező a szolgáltalás regiszterben bejegyezhet új szolgáltatásokat
+- ws reliable messaging: csomagküldő szolgááltatások esetén használt
+- korai összekötés: fordítási időben történik
+- late binding futási időben összekötés
 ## EA 12 - gelhasználói felületek tervezése
 > - felhasználói elégedettségre kell törekedni: felhasználóbarátnak
 > - ergonómikusnak: hosszú munkafolyamat során sem lehet fárasztó
@@ -601,3 +609,32 @@ folyamat szabványok:
     - információ visszakereső rendszerek
 - mindegyik interakció fajtának van előnye a hátránya mellett
 - ideális: ugyanaz több felől megközelíthető: GUI és parancssor is lehet
+
+
+### Második rész: információ megjelenítés
+- hang jelzés fontos főképp a hibejlezések esetén
+- ajánlott szétválasztni a fő komponenseket (model, view, controller) hogy ha megváltoznak az ígnyek, akkor az egyes részek külön külön cserélhetőek, a model is változhat eltérő adaszerkezet esetén pl, a view is változhat eltérő megjelenítési ígények esetén.
+- a viewból az informáió átkerül a controllerbe ahonnan a modellbe kerül, ami külön tudja változtatni még a view-t, és vice versa.
+
+**MVP**: 
+- nézet kettőssége: 
+  - passzív nézet: minden logika a presenter rétegben van, tehát sokmindn oda kerül aminek nem ott a helye
+  - felügyelő nézet: egyes vezérlési feladatokat is ellát, a zártság sérül de praktikusabb, könnyebbb minkromenedzsmenttel foglalkozni
+
+**Felhasznló interakciók MVC esetén:**
+- vezérlőállapotot befolyásol a felhasználó
+- irányelvek: színek alkalmazásának korlátozása, hogy ne egy színkavalakád legyen
+- normál munkamente mellett használt színek tompák legyenek, ami nyugtatja a szemet
+- üzenet szövege környezetfüggő 
+
+***Felhaszánálói felelület tervezse***
+- sok kommunikáció a megrendelő sé a fejelesztők közöttt
+
+### Aspektusorientált szoftverfejlesztés
+- spagetti kód: a prgoram össze vissza ugrál, egyre komplexebbek lesznek
+- szoftverkrízis: 1968-ban a Software engeneering NATO konfererncia -> oop programozás születése -> mi van az oop után?
+  - nagyon nagy és nehezen átlátható rendszerek miatt komponenseket vezetünk be
+  - az áthúzúdó megoldások paraméterek zavarják  az üzleti logikát és az áttekinthetőséget
+  - 
+
+  
