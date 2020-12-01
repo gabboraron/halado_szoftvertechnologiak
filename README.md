@@ -538,8 +538,28 @@ folyamat szabványok:
 >
 > ![összehasonlítás](https://slideplayer.hu/slide/2101979/8/images/16/A+CMMI%C2%AE+modell+elemei+%C3%89retts%C3%A9gi+szint.+L%C3%A9pcs%C5%91s+megk%C3%B6zel%C3%ADt%C3%A9s.+1.+Kezdeti+%28initial%29+2.+Menedzselt+%28Managed%29.jpg)
 ## EA 12 - reverse engeneering I
+PLC3 centrifugáknak kellett meghajtani a centrifugákat, hatalmas kárt okozott az iráni urándusito üzemekben. a gépek 20 százalékát ugy felporgette, hogy tönkrementek. a gépekből nem tudták kiszedni a virust ezért kikapcsolták őket és összetörték. nagyon összetett, kidolgozott virus volt ez, rengeteg pénzzel mögötte, de máig nem tudják ki működtette ezt. Biztosan nagyobb szervezet állt mögötte.
+
+nem a hackertámadással, hanem a szoftverfejlesztés oldalárol vizsgáljuk mit kell tenni ahhoz, hogy a szoftverek támadhatók legyenek, ne kerüljenek biztonsági rések a szoftverekbe.
+
+hibátlan szoftver/program nincsen, a hiba ami bekerülhet a rendszerbe ténylegesen hibásan működő funkcionalitást jelent. azért maradhat benne a rendszerben, mert a szoftverek nagyon komplexek és a hibák kiszürese nagyon komplex. a szoftver tesztelését befejezik ha az működik
+
+véletlenül nyitvahagyott ajtó: back door.
+
+szándékosan: ha elfelejti a jeszot vagy rossz szándékkal.
+
+a kódolási hibák száma: nem publikálják őket, de ipri átlag 1000 soronként 15-50 hiba. a hibákato okozó tényezők: fejlesztési módszertan gyengesége, tesztelés minősége, menyire kimerito a tesztelés. mennyire robosztus tervet sikerült késziteni. 
+
+legjobb módszer:harlan millséletkritikus rendszerek fejlesztésére használják. pl rakétavezérlés, korházi örző rendszerek. 
+
+szoftverhibák biztonsági osztályok alapján sorolhatók be annak fuggv: milyen súlyos a hiba, milyen kárt okoz és hogy milyen beavatkozást okoz a hiba, különbözö hatásuak lehetnek. 
+
+
+> Legkisebb privilégium elve: a legkevesebb jogosultság megadása a felhasználónak amit őős aját felelősségre növelhet, ha akar
+
 - minden  program felbontható: szekvencia szelekció iteráció -ra
 ## EA 11 - reverse engeneering II
+
 - OMG szabvány az UML elődje
 - szolgáltaláts regiszterből válogatjuk ki milyen szolgáltalásra van szüksgünk
 - a kérelmező a szolgáltalás regiszterben bejegyezhet új szolgáltatásokat
@@ -642,6 +662,3 @@ folyamat szabványok:
 - szoftverkrízis: 1968-ban a Software engeneering NATO konfererncia -> oop programozás születése -> mi van az oop után?
   - nagyon nagy és nehezen átlátható rendszerek miatt komponenseket vezetünk be
   - az áthúzúdó megoldások paraméterek zavarják  az üzleti logikát és az áttekinthetőséget
-  - 
-
-  
