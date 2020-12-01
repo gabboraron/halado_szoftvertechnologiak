@@ -546,6 +546,13 @@ folyamat szabványok:
 - ws reliable messaging: csomagküldő szolgááltatások esetén használt
 - korai összekötés: fordítási időben történik
 - late binding futási időben összekötés
+
+- komponnens alapúnál
+- szolgáltatás alapúnál az üzenetküldés a legfontosabb kérdés, a üzenet formátuma
+
+- kliens tartja nyilván, ohgya folymaat milyne állapotban van
+- 
+
 ## EA 12 - gelhasználói felületek tervezése
 > - felhasználói elégedettségre kell törekedni: felhasználóbarátnak
 > - ergonómikusnak: hosszú munkafolyamat során sem lehet fárasztó
